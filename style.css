@@ -1,0 +1,11 @@
+.jumbotron {
+  border-bottom: 2px solid black;
+}
+
+#nine-am {
+  float:left;
+  /* not sure why this border isn't working */
+  border-right: 5px solid black;
+}
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/style" href="style.css">
+  <script defer src="script.js"></script>
+  <!-- <script defer src="moment.js"></script> -->
+
+  <title>To Do</title>
+</head>
+<body>
+  <div class="jumbotron" id="jumbotron">
+    <h1 class="display-4">To Do</h1>
+    <p class="lead">This is a simple web application to assist you in organizing your work day.</p>
+    <hr class="my-4">
+
+    <!-- create a child to the jumbotron class here in js to display the day and potentially the time -->
+  </div>
+  <div class="container">
+    <div class="row">
+      <div id="nine-am" class="col-lg-1">
+        <label>9:00AM</label>
+      </div>
+      <div id="nine-am-list" class="col-lg-8">
+        <input class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+  <script src="moment.js"></script>
+  <script>
+    
+    const m = moment();
+    var jumbotron = document.getElementById("jumbotron");
+
+    console.log(m.format("MMMM Do YYYY, h:mm:ss"));
+    var dateAndTime = document.createElement("p");
+    dateAndTime.textContent = m.format("MMMM Do YYYY, h:mm:ss");
+    jumbotron.appendChild(dateAndTime);
+
+
+  </script>
+</body>
+</html>
