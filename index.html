@@ -23,7 +23,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div id="nine-am" class="col-lg-1">
+      <div id="nine-am" class="col-lg-1 list-div">
         <label>9:00AM</label>
       </div>
       <div id="nine-am-list" class="col-lg-8">
@@ -32,7 +32,105 @@
       <div class="button">
         <button type="button" class="btn btn-primary">Save</button>
       </div>
+
     </div>
+    <div class="row">
+      <div id="ten-am" class="col-lg-1">
+        <label>10:00AM</label>
+      </div>
+      <div id="ten-am-list" class="col-lg-8 list-div">
+        <input id="ten-am-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn10" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="eleven-am" class="col-lg-1">
+        <label>11:00AM</label>
+      </div>
+      <div id="eleven-am-list" class="col-lg-8 list-div">
+        <input id="eleven-am-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn11" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="twelve-pm" class="col-lg-1">
+        <label>12:00PM</label>
+      </div>
+      <div id="twelve-am-list" class="col-lg-8 list-div">
+        <input id="twelve-pm-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn12" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="one-pm" class="col-lg-1">
+        <label>1:00PM</label>
+      </div>
+      <div id="one-pm-list" class="col-lg-8 list-div">
+        <input id="one-pm-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn1" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="two-pm" class="col-lg-1">
+        <label>2:00PM</label>
+      </div>
+      <div id="two-pm-list" class="col-lg-8 list-div">
+        <input id="two-pm-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn2" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="three-pm" class="col-lg-1">
+        <label>3:00PM</label>
+      </div>
+      <div id="three-pm-list" class="col-lg-8 list-div">
+        <input id="three-pm-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn3" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="four-pm" class="col-lg-1">
+        <label>4:00PM</label>
+      </div>
+      <div id="four-pm-list" class="col-lg-8 list-div">
+        <input id="four-pm-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn4" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="five-pm" class="col-lg-1">
+        <label>5:00PM</label>
+      </div>
+      <div id="five-pm-list" class="col-lg-8 list-div">
+        <input id="five-pm-input" class="input" type="text" size="100" placeholder="What do you want to do?">
+      </div>
+      <div class="button">
+        <button id="btn5" type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    
   </div>
   <script src="moment.js"></script>
   <script>
@@ -42,7 +140,7 @@
 
     console.log(m.format("MMMM Do YYYY, h:mm:ss"));
     var dateAndTime = document.createElement("p");
-    dateAndTime.textContent = m.format("MMMM Do YYYY, h:mm:ss");
+    dateAndTime.textContent = m.format("dddd MMMM Do YYYY");
     jumbotron.appendChild(dateAndTime);
 
 
